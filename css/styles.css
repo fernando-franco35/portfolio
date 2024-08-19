@@ -183,14 +183,14 @@ p:not(.proyectos p){
 }
 
 /*animacion para el carrusel*/
-@keyframes slide{
+/*@keyframes slide{
     from{
 		 transform: translateX(0);
 	}
 	to{
 		transform:  translateX(-100%);
 	}
-}
+}*/
 
 /*tomo el mismo ancho para cada imagenes (8)*/
 .scroll {

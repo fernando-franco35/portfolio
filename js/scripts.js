@@ -24,5 +24,5 @@ function moveCarousel() {
 */
 
 /*clonacion de las imagenes para el carrusel*/
-var copia = document.querySelector(".carrusel").cloneNode(true);
-document.querySelector(".logos").appendChild(copia);
+/*var copia = document.querySelector(".carrusel").cloneNode(true);
+document.querySelector(".logos").appendChild(copia);*/

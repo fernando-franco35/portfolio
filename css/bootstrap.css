@@ -9790,7 +9790,7 @@ textarea.form-control-lg {
     -o-object-fit: none !important;
     object-fit: none !important;
   }
-  .d-md-inline {
+  .inline {
     display: inline !important;
   }
   .d-md-inline-block {
