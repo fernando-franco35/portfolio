@@ -1,0 +1,216 @@
+:root{
+    --colorPrimario:#050e1a;
+    --colorSecundario:rgb(43, 233, 187);
+    --colorText:#ccd6f6;  
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: linear-gradient(45deg, #222222, #2d4646, #222222, #334747);
+    background-size: 400% 400%;
+    -webkit-animation: gradientBG 15s ease infinite;
+    animation: gradienteBG 15s ease infinite;
+}
+
+html{
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+}
+
+/*animacion bg-body*/
+@keyframes gradienteBG{
+0% {
+    background-position: 0 50%;
+}
+50% {
+    background-position: 100% 50%;
+}
+100% {
+    background-position: 0 50%;
+}
+}
+
+h1,h2,h3,h4,h5{
+    text-transform: capitalize;
+}
+
+.listaHeader{
+    height: 50px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 0 auto;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+}
+
+span{
+    color: var(--colorSecundario);
+}
+
+.color-texto-sec{
+    color: var(--colorText);
+}
+
+.color-texto-white{
+    color: azure;
+}
+
+.listaheader a{
+    text-decoration: none;
+    padding: 0 20px;
+    text-transform: capitalize;
+} 
+
+.listaheader a:hover{
+    color: var(--colorSecundario);
+    text-decoration: underline;
+}
+.presentacion{
+    max-width: 80%;
+    margin: auto;
+    padding-top: 100px;
+    h1 , h3{
+        text-transform: capitalize;   
+        color: var(--colorSecundario);
+        text-align: center;
+    }    
+}
+
+p:not(.proyectos p){
+    color: var(--colorText);
+    text-align: center;
+    max-width: 80%;
+    margin: auto;
+}
+
+.borde{
+    border: var(--colorSecundario) 1px solid;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+}
+
+.centro{
+    margin: 20px auto;
+}
+
+.li-contactos:hover{
+    opacity: 0.5;
+}
+
+.img-proyecto{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.parrafo-cuadros{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;    
+    transform: scale(0);
+    transition: .5s ease-out;
+    border-radius: 10px;
+    background-color: rgba(128, 128, 128, 0.349);
+}
+
+.linearoja{
+    border: red solid 2px;
+}
+
+.cuadro1:hover .parrafo-cuadros{
+    transform: scale(1);
+}
+
+.cuadro2:hover .parrafo-cuadros{
+    transform: scale(1);
+}
+
+.logos{
+    height: 250px;
+}
+
+.carrusel { 
+    animation: slide 10s linear infinite;
+}
+
+.logos:hover .carrusel{
+    animation-play-state: paused;
+}
+
+.cuadro1{
+    position: relative;
+    animation: insercion1 linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
+}
+
+/*animacion laterales proyectos*/
+@keyframes insercion1 {
+    from{
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.cuadro2{
+    position: relative;
+    animation: insercion2 linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
+}
+
+/*animacion laterales proyectos*/
+@keyframes insercion2 {
+    from{
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/*animacion para el carrusel*/
+@keyframes slide{
+    from{
+		 transform: translateX(0);
+	}
+	to{
+		transform:  translateX(-100%);
+	}
+}
+
+/*tomo el mismo ancho para cada imagenes (8)*/
+.scroll {
+    flex: 0 0 12.5%; 
+}
+
+.redes-sociales{
+    animation: insercion3 linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 20%;
+}    
+
+/*animacion laterales redes sociales*/
+@keyframes insercion3 {
+    from{
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
