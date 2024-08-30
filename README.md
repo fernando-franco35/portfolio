@@ -7,4 +7,4 @@
   <li>javascript</li>
   <li>bootstrap</li>
 </ul>
-<p style="color:red">en proceso</p>
+<p>estado : EN PROCESO</p>
