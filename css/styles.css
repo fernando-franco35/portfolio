@@ -72,7 +72,7 @@ span{
 .presentacion{
     max-width: 80%;
     margin: auto;
-    padding-top: 100px;
+    padding-top: 30px;
     h1 , h3{
         text-transform: capitalize;   
         color: var(--colorSecundario);
@@ -89,13 +89,22 @@ p:not(.proyectos p){
 
 .borde{
     border: var(--colorSecundario) 1px solid;
-    width: 250px;
-    height: 250px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
 }
 
+/*
 .centro{
     margin: 20px auto;
+}
+*/
+
+@media screen and (max-width:962px){
+    .proyecto-block{
+        display: flex !important;
+        flex-direction: column !important;
+    }
 }
 
 .li-contactos:hover{
@@ -108,24 +117,20 @@ p:not(.proyectos p){
 }
 
 .parrafo-cuadros{
-    height: 100%;
-    width: 100%;
+    /*height: 100%;
+    width: 100%;*/
     display: flex;
-    justify-content: center;
-    align-items: center;
+    /*justify-content: center;
+    align-items: center;*/
     cursor: pointer;    
-    transform: scale(0);
+    /*transform: scale(0);*/
     transition: .5s ease-out;
     border-radius: 10px;
-    background-color: rgba(128, 128, 128, 0.349);
+    /*background-color: rgba(128, 128, 128, 0.349);*/
 }
 
 .linearoja{
     border: red solid 2px;
-}
-
-.cuadro1:hover .parrafo-cuadros{
-    transform: scale(1);
 }
 
 .cuadro2:hover .parrafo-cuadros{
@@ -213,4 +218,15 @@ p:not(.proyectos p){
         opacity: 1;
         transform: translateX(0);
     }
+}
+
+/*tamaño para las imagenes de los proyectos*/
+.width{
+    width: 300px;
+    height: auto;
+}
+
+.boton:hover{
+    background-color: rgba(43, 233, 186, 0.589);	
+    box-shadow: 0 0 20px 0 gray;
 }

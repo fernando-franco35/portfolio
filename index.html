@@ -1,13 +1,35 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Meta descripción para SEO -->
+    <meta name="description" content="Portfolio de Fernando Franco, desarrollador frontend apasionado por la creación de interfaces web atractivas y funcionales. Descubre mis proyectos y experiencia en desarrollo web.">
+    
+    <!-- Meta keywords para SEO -->
+    <meta name="keywords" content="Fernando Franco, desarrollador frontend, portfolio, desarrollo web, HTML, CSS, JavaScript, proyectos web, diseño web, programación">
+
+    <!-- Meta autor -->
+    <meta name="author" content="Fernando Franco">
+
+    <!-- Open Graph para mejorar la presentación en redes sociales -->
+    <meta property="og:title" content="Portfolio Fernando Franco - Desarrollador Frontend">
+    <meta property="og:description" content="Explora el portfolio de Fernando Franco, desarrollador frontend. Proyectos, habilidades y experiencia en desarrollo web.">
+    <meta property="og:image" content="https://www.tusitioweb.com/imagen-de-previa.png"> <!-- URL de una imagen representativa de tu sitio -->
+    <meta property="og:url" content="https://www.tusitioweb.com">
+    <meta property="og:type" content="website">
+
+    <!-- Enlaces a hojas de estilo -->
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/styles.css">
+    
+    <!-- Favicon -->
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- Título de la página -->
     <title>Portfolio Fernando Franco</title>
-  </head>
+</head>
 
 <body>
 
@@ -31,7 +53,7 @@
                 <a class="nav-link   color-texto-white text-capitalize" href="#contacto">contacto</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link color-texto-white text-capitalize" href="#cv">curriculum</a>
+                <a class="nav-link color-texto-white text-capitalize" href="">curriculum</a>
               </li>
             </ul>
           </div>
@@ -40,94 +62,138 @@
 </header>
 
 <section class="presentacion">
-    <div class="col-12 centro borde progress-bar">
-      <img src="assets/redhot.jpg" class="img-fluid" alt="imagen perfil">
+    <div class="col-12 mx-auto borde progress-bar mb-3">
+      <img src="assets/fotodeperfil.png" class="w-100" alt="imagen perfil">
     </div>  
-    <div class="centro">
+    <div class="">
         <h1>fernando franco</h1>
         <h3>front-end developer</h3>
-        <p class="fs-6">¡Hola! Soy estudiante de <span>Licenciatura en Informática</span>, la pasión por la <span>tecnología</span> y la <span>programación</span> me llevó al mundo del desarrollo web. 
-        Comence con el desarrollo front-end en enero de 2024, con el curso de Codo a Codo que brinda el gobierno de la ciudad de BS AS y desde entonces estoy en constante proceso de <span>aprendizaje</span>. siempre busco estar al día con las últimas tecnologías y tendencias en el desarrollo web para crear interfaces de usuario <span>fluidas y agradables</span>. Asumo cada proyecto con gran <span>entusiasmo</span> y con ganas de aprender. Busco siempre dar lo mejor de mí mismo.</p>
-        <p><span>Gracias</span> por visitar mi portfolio y no dudes en contactarme! :)</p>
+        <p class="fs-6 mt-4">¡Hola! Soy estudiante de <span>Licenciatura en Informatica</span>, la pasión por la <span>tecnología</span> y la <span>programación</span> me llevó al mundo del desarrollo web. 
+        Comence con el desarrollo front-end en enero de 2023, con el curso de Codo a Codo que brinda el gobierno de la ciudad de BS AS y desde entonces estoy en constante proceso de <span>aprendizaje</span>. siempre busco estar al día con las últimas tecnologías y tendencias en el desarrollo web para crear interfaces de usuario <span>fluidas y agradables</span>. Asumo cada proyecto con gran <span>entusiasmo</span> y con ganas de aprender. Busco siempre dar lo mejor de mí mismo.</p>
+        <p><span>Gracias</span> por visitar   mi portfolio y no dudes en contactarme! :)</p>
     </div>
 </section>
 
-<section class="proyectos text-capitalize mt-5 w-75 m-auto " id="proyectos">
-      <h3 class="my-3 text-center"><span>proyectos</span></h3>
-      <div class="w-75 my-5 mx-auto row gap-5">
-        <div class="p-0 m-auto my-3 progress-bar cuadro1 w-75 h-50 position-relative col">
-          <p class="parrafo-cuadros text-wrap position-absolute m-0 fs-3 color-texto-white">PelisPedia-pagina web peliculas</p>
-          <a href="https://fernando-franco35.github.io/PelisFeria/"><img class="img-fluid img-proyecto" src="assets/pelispediacaptura.png" alt="proyecto"></a>
+<section class="proyectos text-capitalize my-5 pt-5 w100 m-auto" id="proyectos">
+      <h3 class="my-5 text-center"><span>proyectos</span></h3>
+      <div class="my-5 mx-auto">
+        <div class="proyecto-block p-5 m-auto my-5 column-gap-4 w-75 d-flex flex-row align-items-center justify-content-around">
+          <!--<p class="parrafo-cuadros text-wrap position-absolute m-0 fs-3 color-texto-white">PelisPedia-pagina web peliculas</p>-->
+          <img class="width rounded-3 cuadro1" src="assets/pelispediacaptura.png" alt="proyecto peliculas">
+          <div class="mt-3 d-flex flex-column text-center cuadro2">
+            <h3 class="text-capitalize text-center color-texto-white">pelispedia</h3>
+            <ul class="list-unstyled d-flex justify-content-center pt-2">
+              <li><img src="assets/html.png" alt=""></li>
+              <li><img src="assets/css.png" alt=""></li>
+              <li><img src="assets/JS.png" alt=""></li>
+            </ul>
+            <a href="https://fernando-franco35.github.io/encriptador-de-textos/" title="ver pagina" class="color-texto-white align-items-center  "><button class="rounded-1 border-0 boton">ver pagina</button></a>
+          </div>
         </div>
-        <div class="m-auto my-3 progress-bar cuadro2 w-75 h-50 p-0 position-relative col">
-          <p class="parrafo-cuadros text-wrap position-absolute my-0 fs-3 color-texto-white">Encriptador de textos</p>
-          <a href="https://fernando-franco35.github.io/encriptador-de-textos/"><img class="img-fluid img-proyecto" src="assets/encriptadorcaptura.png" alt="proyecto"></a>
+        <div class="proyecto-block m-auto my-5 column-gap-4 justify-content-around w-75 p-5 d-flex flex-row align-items-center">
+          <!--<p class="parrafo-cuadros text-wrap position-absolute my-0 fs-3 color-texto-white">Encriptador de textos</p>-->
+          <div class="mt-3 d-flex flex-column text-center cuadro1 order-1 order-sm-1 order-md-1 order-lg-0 order-xl-0">  
+            <h3 class="text-capitalize text-center justify-content-center text-wrap color-texto-white">encriptador de textos</h3>
+            <ul class="list-unstyled d-flex justify-content-center pt-2">
+              <li><img src="assets/html.png" alt=""></li>
+              <li><img src="assets/css.png" alt=""></li>
+              <li><img src="assets/JS.png" alt=""></li>
+            </ul>
+            <a href="https://fernando-franco35.github.io/encriptador-de-textos/" title="ver pagina" class="color-texto-white  align-items-center"><button class="rounded-1 border-0 boton">ver pagina</button></a>
+          </div>
+          <img class="width rounded-3 cuadro2" src="assets/encriptadorcaptura.png" alt="proyecto encriptador de textos">
+        </div>
+      <div class="proyecto-block p-5 m-auto column-gap-4 my-5 w-75 d-flex flex-row align-items-center justify-content-around">
+        <!--<p class="parrafo-cuadros text-wrap position-absolute m-0 fs-3 color-texto-white">PelisPedia-pagina web peliculas</p>-->
+        <img class="width rounded-3 cuadro1" src="assets/pelispediacaptura.png" alt="proyecto peliculas">
+        <div class="mt-3 d-flex flex-column text-center cuadro2">
+          <h3 class="text-capitalize text-center color-texto-white">pelispedia</h3>
+          <ul class="list-unstyled d-flex justify-content-center pt-2">
+            <li><img src="assets/html.png" alt=""></li>
+            <li><img src="assets/css.png" alt=""></li>
+            <li><img src="assets/JS.png" alt=""></li>
+          </ul>
+          <a href="https://fernando-franco35.github.io/encriptador-de-textos/" title="ver pagina" class="color-texto-white align-items-center  "><button class="rounded-1 border-0 boton">ver pagina</button></a>
         </div>
       </div>
+      <div class="proyecto-block m-auto my-5 column-gap-4 justify-content-around w-75 p-5 d-flex flex-row align-items-center">
+        <!--<p class="parrafo-cuadros text-wrap position-absolute my-0 fs-3 color-texto-white">Encriptador de textos</p>-->
+        <div class="mt-3 d-flex flex-column text-center cuadro1 order-1 order-sm-1 order-md-1 order-lg-0 order-xl-0">  
+          <h3 class="text-capitalize text-center justify-content-center text-wrap color-texto-white">encriptador de textos</h3>
+          <ul class="list-unstyled d-flex justify-content-center pt-2">
+            <li><img src="assets/html.png" alt=""></li>
+            <li><img src="assets/css.png" alt=""></li>
+            <li><img src="assets/JS.png" alt=""></li>
+          </ul>
+          <a href="https://fernando-franco35.github.io/encriptador-de-textos/" title="ver pagina" class="color-texto-white  align-items-center"><button class="rounded-1 border-0 boton">ver pagina</button></a>
+        </div>
+        <img class="width rounded-3 cuadro2 " src="assets/encriptadorcaptura.png" alt="proyecto encriptador de textos">
+      </div>
+    </div>
 </section>
 
-<section class="mx-auto d-flex text-center my-5 w-75 overflow-hidden position-relative ">
+<section class="mx-auto d-flex text-center mt-5 pt-5 w-75 overflow-hidden position-relative">
   <div class="align-items-center position-absolute start-50 translate-middle-x">
     <h3><span>hard skills</span></h3>
   </div>
   <div class="mx-auto pt-5 my-5 d-flex flex-wrap text-uppercase justify-content-center">
-    <div class="scroll pt-5 px-5">
+    <div class="m-auto px-1 py-4 p-md-5">
       <img src="assets/html.png" alt="">
       <p>html</p>
     </div>
-    <div class="scroll pt-5 px-5">
+    <div class="m-auto px-1 py-4 p-md-5">
       <img src="assets/css.png" alt="">
       <p>css</p>
     </div>
-    <div class="scroll pt-5 px-5">
+    <div class="m-auto px-1 py-4 p-md-5">
       <img src="assets/JS.png" alt="">
       <p>js</p>
     </div>
-    <div class="scroll pt-5 px-5">
+    <div class="m-auto px-1 py-4 p-md-5">
       <img src="assets/bootstrap.png" alt="">
       <p>bootstrap</p>
     </div>
-    <div class="scroll pt-5 px-5">
+    <div class="m-auto px-1 py-4 p-md-5">
       <img src="assets/git.png" alt="">
       <p>git</p>
     </div>
-    <div class="scroll pt-5 px-5">
+    <div class="m-auto px-1 py-4 p-md-5">
       <img src="assets/github.png" alt="">
       <p>github</p>
     </div>
-    <div class="scroll pt-5 px-5">
+    <div class="m-auto px-1 py-4 p-md-5">
       <img src="assets/sql.png" alt="">
       <p>sql</p>
     </div>
-    <div class="scroll pt-5 px-5">
+    <div class="m-auto px-1 py-4 p-md-5">
       <img src="assets/scrum.png" alt="">
       <p>scrum</p>
     </div>
   </div>
 </section>
 
-<section class="mt-0 py-5" id="sobremi">
-      <h3 class="my-3 text-center text-capitalize"><span>sobre mi</span></h3>
+<section class="my-3" id="sobremi">
+      <h3 class="my-5 py-5 text-center text-capitalize"><span>sobre mi</span></h3>
       <p>Además de programar y estudiar, disfruto hacer gimnasia y practicar diversos deportes. Estas actividades me ayudan a mantener un equilibrio saludable entre mi vida profesional y personal, permitiéndome estar enfocado y motivado en mis proyectos. Creo que un cuerpo activo complementa una mente activa, lo que me impulsa a dar lo mejor de mí en cada tarea que emprendo.</p>
 </section>
 
-<section class="my-5" id="contacto">
-  <h3 class="my-3 text-center"><span>contacto</span></h3>
+<section class="mt-5 mb-3 py-5" id="contacto">
+  <h3 class="my-5 py-3 text-center"><span>contacto</span></h3>
   <p>¿Queres saber más sobre mí?</p>
   <p>Si estás buscando un frontend o simplemente queres conocerme más, podes contactarme.</p>
-  <ul class="text-center row container-fluid list-unstyled my-5 mx-auto">
+  <ul class="text-center row container-fluid list-unstyled my-5 py-5 mx-auto">
     <li class="redes-sociales col-md-4">
       <a href="https://github.com/fernando-franco35" target="_blank"><img class="li-contactos" src="assets/github.png" alt="enlace repositorio de github">
       </a>
-      <h5 class="fs-6 color-texto-white text-decoration-none">fernando-franco35</h5>
+      <h4 class="fs-6 color-texto-white text-decoration-none">fernando-franco35</h4>
     </li>
     <li class="redes-sociales col-md-4">
       <a href="https://www.linkedin.com/in/fernandofrancodev" target="_blank"><img class="li-contactos" src="assets/linkedin.png" alt="enlace perfil de linkedin"></a>
-      <h5 class="fs-6 color-texto-white text-decoration-none">Fernando Franco</h5>
+      <h4 class="fs-6 color-texto-white text-decoration-none">Fernando Franco</h4>
     </li>
     <li class="redes-sociales col-md-4">
       <a href="mailto:francofernando33897@gmail.com"><img class="li-contactos" src="assets/email.png" alt="enlace email"></a>
-      <h5 class="fs-6 color-texto-white text-decoration-none">francofernando33897@gmail.com</h5>
+      <h4 class="fs-6 color-texto-white text-decoration-none">francofernando33897@gmail.com</h4>
     </li>
   </ul>
 </section>
