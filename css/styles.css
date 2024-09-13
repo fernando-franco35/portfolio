@@ -73,7 +73,7 @@ span{
     max-width: 80%;
     margin: auto;
     padding-top: 30px;
-    h1 , h3{
+    h1 , h2{
         text-transform: capitalize;   
         color: var(--colorSecundario);
         text-align: center;
